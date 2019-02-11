@@ -21,3 +21,28 @@ Use what you learned from exploring the documentation to make various sample req
 
 *The Base API URL (returns no data on it's own): [https://api.thedogapi.com/v1/](https://api.thedogapi.com/v1/)
 *The list of Dog Breeds: [https://api.thedogapi.com/v1/breeds]()
+*Information and a randomized Image URL of a selected dog breed https://api.thedogapi.com/v1/images/search?breed_ids={BREED ID} [Example](https://api.thedogapi.com/v1/images/search?breed_ids=14)
+*Image URL [example](https://cdn2.thedogapi.com/images/qBYpfkZr1.jpg)
+
+Each of these endpoints will provide you with the basis of one of your model objects. Each will require it's own fetch functions. You should familiarize yourself with the structure of the json of each query.
+
+#### Model Objects:
+You will need two model objects in this project. A model representing a dog breed and a photo of the dog breed.
+
+Create a new Cocoa Touch sublcess of `NSObject` for each of these three model objects.
+
+*Add properties for the following model objects. Use the json trees above to determins the type of each property. Assume all properties should be nonatomic and readonly:
+
+* **Breed**:
+* The Breed's ID
+* The Name 
+* The Country Code
+* A description of what the dog is bred for
+* Breed Group
+* Lifespan
+* temperment
+* UUID
+* ImageURL
+* Image
+
+* **Image**:
