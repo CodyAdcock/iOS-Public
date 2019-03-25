@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = self.breed.name;
+    self.title = [self.breed.name capitalizedString];
 }
 
 #pragma mark - Table view data source
