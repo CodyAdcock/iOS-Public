@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [CRABreedNetworkClient.sharedController fetchAllBreeds:^(NSArray *breeds) {
+    [[CRABreedNetworkClient sharedController] fetchAllBreeds:^(NSArray *breeds) {
         self.breeds = breeds;
         dispatch_async(dispatch_get_main_queue(), ^{
             [[self tableView] reloadData];

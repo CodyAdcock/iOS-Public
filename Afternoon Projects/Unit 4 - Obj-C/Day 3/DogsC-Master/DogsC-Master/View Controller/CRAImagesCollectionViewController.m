@@ -11,7 +11,7 @@
 #import "CRASubBreed.h"
 #import "CRAImageCollectionViewCell.h"
 #import "CRABreedNetworkClient.h"
-#import "CRADetailViewController.h"
+#import "DogsC_Master-Swift.h"
 
 @interface CRAImagesCollectionViewController ()
 
@@ -26,7 +26,8 @@ static NSString * const reuseIdentifier = @"imageCell";
     
     self.title = self.breed.name.capitalizedString;
     if(_subBreed){
-        self.title = self.subBreed.name.capitalizedString;
+        NSString *title = [[_subBreed.name.capitalizedString stringByAppendingString:@" "] stringByAppendingString:_breed.name.capitalizedString];
+        self.title = title;
     }
     [self fetchImageURLs];
 }
@@ -58,21 +59,37 @@ static NSString * const reuseIdentifier = @"imageCell";
 
 -(void)fetchImageURLs
 {
-    
     if(_subBreed){
-        [CRABreedNetworkClient.sharedController fetchSubBreedImageURLs:_subBreed breed:_breed completion:^(NSArray *fetchedURLs) {
+        [[CRABreedNetworkClient sharedController] fetchSubBreedImageURLs:_subBreed breed:_breed completion:^(NSArray *fetchedURLs) {
             self->_imageURLs = fetchedURLs;
             dispatch_async(dispatch_get_main_queue(), ^{
                 [[self collectionView] reloadData];
             });
         }];
     }else{
-        [CRABreedNetworkClient.sharedController fetchBreedImageURLs: _breed completion:^(NSArray *fetchedURLs) {
+        [[CRABreedNetworkClient sharedController] fetchBreedImageURLs: _breed completion:^(NSArray *fetchedURLs) {
             self->_imageURLs = fetchedURLs;
             dispatch_async(dispatch_get_main_queue(), ^{
                 [[self collectionView] reloadData];
             });
         }];
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"toDetailVC"])
+    {
+        NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems]firstObject];
+        NSURL *dogImageURL = [NSURL URLWithString:_imageURLs[indexPath.row]];
+        DetailViewController *destinationVC = segue.destinationViewController;
+        destinationVC.dogImageURL = dogImageURL;
+        if(_breed){
+            destinationVC.breed = _breed;
+        }
+        if(_subBreed){
+            destinationVC.subBreed = _subBreed;
+        }
     }
 }
 
