@@ -9,10 +9,11 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    
+    //IBOutlets
     @IBOutlet weak var dogImageView: UIImageView!
     @IBOutlet weak var dogNameLabel: UILabel!
     
+    //ImageURL landing pad
     @objc var dogImageURL: NSURL?{
         didSet{
             loadViewIfNeeded()
@@ -25,12 +26,14 @@ class DetailViewController: UIViewController {
         }
     }
     
+    //breed landing pad
     @objc var breed: CRABreed?{
         didSet{
             loadViewIfNeeded()
             dogNameLabel.text = breed?.name.capitalized
         }
     }
+    //subBreed landing pad
     @objc var subBreed: CRASubBreed?{
         didSet{
             loadViewIfNeeded()

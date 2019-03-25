@@ -14,11 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 @class CRASubBreed;
 
 @interface CRAImagesCollectionViewController : UICollectionViewController
-
+//properties
 @property (nonatomic, strong) CRABreed * breed;
 @property (nonatomic, strong) CRASubBreed * subBreed;
 @property (nonatomic) NSArray * imageURLs;
 
+//functions
 -(void)fetchImageURLs;
 
 @end
