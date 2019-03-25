@@ -12,6 +12,10 @@
 		C37EBB7D22486E4300ECA71F /* CRASubBreedsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB7C22486E4300ECA71F /* CRASubBreedsListTableViewController.m */; };
 		C37EBB80224878AB00ECA71F /* CRAImagesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB7F224878AB00ECA71F /* CRAImagesCollectionViewController.m */; };
 		C37EBB83224878E000ECA71F /* CRAImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB82224878E000ECA71F /* CRAImageCollectionViewCell.m */; };
+<<<<<<< HEAD
+=======
+		C38F21922248D70500E50945 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38F21912248D70500E50945 /* DetailViewController.swift */; };
+>>>>>>> CodyDetailView
 		C39748B22208D737009A3D3A /* CRABreed.m in Sources */ = {isa = PBXBuildFile; fileRef = C39748B12208D737009A3D3A /* CRABreed.m */; };
 		C3C5A7C521F668AB0000E4B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A7C421F668AB0000E4B1 /* AppDelegate.m */; };
 		C3C5A7CB21F668AB0000E4B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C5A7C921F668AB0000E4B1 /* Main.storyboard */; };
@@ -156,6 +160,10 @@
 				C37EBB7C22486E4300ECA71F /* CRASubBreedsListTableViewController.m */,
 				C37EBB7E224878AB00ECA71F /* CRAImagesCollectionViewController.h */,
 				C37EBB7F224878AB00ECA71F /* CRAImagesCollectionViewController.m */,
+<<<<<<< HEAD
+=======
+				C38F21912248D70500E50945 /* DetailViewController.swift */,
+>>>>>>> CodyDetailView
 				C38F21902248D70500E50945 /* DogsC-Master-Bridging-Header.h */,
 			);
 			path = "View Controller";

@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+//Classes needed for the Networking Client
 @class CRABreed;
 @class CRAImage;
 @class CRASubBreed;
 
 @interface CRABreedNetworkClient : NSObject
 
+//Fetch a list of all breeds and sub breeds
 - (void)fetchAllBreeds: (void (^) (NSArray *))completion;
 
 //fetch breed image URLs
@@ -26,6 +28,7 @@
 //fetch image data
 - (void)fetchImageData:(NSURL *)url completion:(void (^)(NSData *imageData, NSError *error))completion;
 
+//shared instance method
 + (CRABreedNetworkClient *)sharedController;
 
 @end

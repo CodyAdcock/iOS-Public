@@ -21,7 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [CRABreedNetworkClient.sharedController fetchAllBreeds:^(NSArray *breeds) {
+    //fetch breeds on first load
+    [[CRABreedNetworkClient sharedController] fetchAllBreeds:^(NSArray *breeds) {
         self.breeds = breeds;
         dispatch_async(dispatch_get_main_queue(), ^{
             [[self tableView] reloadData];
@@ -36,7 +37,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _breeds.count;
+    return self.breeds.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -47,23 +48,29 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CRABreed * breed = _breeds[[[[self tableView] indexPathForSelectedRow] row]];
+    //When row is selected determine if the selected Breed has Sub-Breeds
+    CRABreed * breed = self.breeds[[[[self tableView] indexPathForSelectedRow] row]];
     if( [breed.subBreeds count] > 0){
+        //if there are subBreeds go to the SubBreedTableViewController
         [self performSegueWithIdentifier:@"toSubBreedVC" sender:self];
     }else{
+        //if not, go to the ImageCollectionView
         [self performSegueWithIdentifier:@"toCollectionVC" sender:self];
     }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    CRABreed * breed = _breeds[[[[self tableView] indexPathForSelectedRow] row]];
+    CRABreed * breed = self.breeds[[[[self tableView] indexPathForSelectedRow] row]];
+     //When the segue is about to be performed, determine if the selected Breed has Sub-Breeds
     if([segue.identifier  isEqualToString: @"toSubBreedVC"])
     {
+        //If it's to the SubBreedTableViewController. Send the breed to that landing pad.
         CRASubBreedsListTableViewController *destinationVC = segue.destinationViewController;
         destinationVC.breed = breed;
         
     }else if([segue.identifier  isEqualToString: @"toCollectionVC"]){
+        //If it's to the ImageCollectionView send the breed to that landing pad.
         CRAImagesCollectionViewController *destinationVC = segue.destinationViewController;
         destinationVC.breed = breed;
     }
