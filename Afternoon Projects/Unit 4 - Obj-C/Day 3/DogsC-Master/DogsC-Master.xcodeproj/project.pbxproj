@@ -36,11 +36,11 @@
 		C37EBB82224878E000ECA71F /* CRAImageCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAImageCollectionViewCell.m; sourceTree = "<group>"; };
 		C37EBB872248BBAE00ECA71F /* CRADetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRADetailViewController.h; sourceTree = "<group>"; };
 		C37EBB882248BBAE00ECA71F /* CRADetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRADetailViewController.m; sourceTree = "<group>"; };
-		C38F21902248D70500E50945 /* DogsAndCatsC-Master-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DogsAndCatsC-Master-Bridging-Header.h"; sourceTree = "<group>"; };
+		C38F21902248D70500E50945 /* DogsC-Master-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DogsC-Master-Bridging-Header.h"; sourceTree = "<group>"; };
 		C38F21912248D70500E50945 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C39748B02208D737009A3D3A /* CRABreed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRABreed.h; sourceTree = "<group>"; };
 		C39748B12208D737009A3D3A /* CRABreed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRABreed.m; sourceTree = "<group>"; };
-		C3C5A7C021F668AB0000E4B1 /* DogsAndCatsC-Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DogsAndCatsC-Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C5A7C021F668AB0000E4B1 /* DogsC-Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DogsC-Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C5A7C321F668AB0000E4B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3C5A7C421F668AB0000E4B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C3C5A7CA21F668AB0000E4B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		C3C5A7B721F668AB0000E4B1 = {
 			isa = PBXGroup;
 			children = (
-				C3C5A7C221F668AB0000E4B1 /* DogsAndCatsC-Master */,
+				C3C5A7C221F668AB0000E4B1 /* DogsC-Master */,
 				C3C5A7C121F668AB0000E4B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,12 +84,12 @@
 		C3C5A7C121F668AB0000E4B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C3C5A7C021F668AB0000E4B1 /* DogsAndCatsC-Master.app */,
+				C3C5A7C021F668AB0000E4B1 /* DogsC-Master.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C3C5A7C221F668AB0000E4B1 /* DogsAndCatsC-Master */ = {
+		C3C5A7C221F668AB0000E4B1 /* DogsC-Master */ = {
 			isa = PBXGroup;
 			children = (
 				C3C5A7DE21F668F70000E4B1 /* View Controller */,
@@ -101,7 +101,7 @@
 				C3C5A7D921F668CA0000E4B1 /* Resources */,
 				C3E44A4521F6875C0032E03B /* README.md */,
 			);
-			path = "DogsAndCatsC-Master";
+			path = "DogsC-Master";
 			sourceTree = "<group>";
 		};
 		C3C5A7D921F668CA0000E4B1 /* Resources */ = {
@@ -164,7 +164,7 @@
 				C37EBB872248BBAE00ECA71F /* CRADetailViewController.h */,
 				C37EBB882248BBAE00ECA71F /* CRADetailViewController.m */,
 				C38F21912248D70500E50945 /* DetailViewController.swift */,
-				C38F21902248D70500E50945 /* DogsAndCatsC-Master-Bridging-Header.h */,
+				C38F21902248D70500E50945 /* DogsC-Master-Bridging-Header.h */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -172,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C3C5A7BF21F668AB0000E4B1 /* DogsAndCatsC-Master */ = {
+		C3C5A7BF21F668AB0000E4B1 /* DogsC-Master */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3C5A7D621F668AB0000E4B1 /* Build configuration list for PBXNativeTarget "DogsAndCatsC-Master" */;
+			buildConfigurationList = C3C5A7D621F668AB0000E4B1 /* Build configuration list for PBXNativeTarget "DogsC-Master" */;
 			buildPhases = (
 				C3C5A7BC21F668AB0000E4B1 /* Sources */,
 				C3C5A7BD21F668AB0000E4B1 /* Frameworks */,
@@ -184,9 +184,9 @@
 			);
 			dependencies = (
 			);
-			name = "DogsAndCatsC-Master";
+			name = "DogsC-Master";
 			productName = "DogsAndCatsC-Master";
-			productReference = C3C5A7C021F668AB0000E4B1 /* DogsAndCatsC-Master.app */;
+			productReference = C3C5A7C021F668AB0000E4B1 /* DogsC-Master.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C3C5A7BB21F668AB0000E4B1 /* Build configuration list for PBXProject "DogsAndCatsC-Master" */;
+			buildConfigurationList = C3C5A7BB21F668AB0000E4B1 /* Build configuration list for PBXProject "DogsC-Master" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,7 +217,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C3C5A7BF21F668AB0000E4B1 /* DogsAndCatsC-Master */,
+				C3C5A7BF21F668AB0000E4B1 /* DogsC-Master */,
 			);
 		};
 /* End PBXProject section */
@@ -395,14 +395,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23QW9JU9DK;
-				INFOPLIST_FILE = "$(SRCROOT)/DogsAndCatsC-Master/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DogsC-Master/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CodyAdcock.DogsAndCatsC-Master";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CodyAdcock.DogsC-Master";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DogsAndCatsC-Master/View Controller/DogsAndCatsC-Master-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DogsC-Master/View Controller/DogsC-Master-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,14 +416,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23QW9JU9DK;
-				INFOPLIST_FILE = "$(SRCROOT)/DogsAndCatsC-Master/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DogsC-Master/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CodyAdcock.DogsAndCatsC-Master";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CodyAdcock.DogsC-Master";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DogsAndCatsC-Master/View Controller/DogsAndCatsC-Master-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DogsC-Master/View Controller/DogsC-Master-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -432,7 +432,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C3C5A7BB21F668AB0000E4B1 /* Build configuration list for PBXProject "DogsAndCatsC-Master" */ = {
+		C3C5A7BB21F668AB0000E4B1 /* Build configuration list for PBXProject "DogsC-Master" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C3C5A7D421F668AB0000E4B1 /* Debug */,
@@ -441,7 +441,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3C5A7D621F668AB0000E4B1 /* Build configuration list for PBXNativeTarget "DogsAndCatsC-Master" */ = {
+		C3C5A7D621F668AB0000E4B1 /* Build configuration list for PBXNativeTarget "DogsC-Master" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C3C5A7D721F668AB0000E4B1 /* Debug */,
