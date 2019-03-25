@@ -6,36 +6,27 @@
 //  Copyright © 2019 Cody Adcock. All rights reserved.
 //
 
-#import "BreedsListTableViewController.h"
+#import "CRABreedsListTableViewController.h"
 #import "CRABreed.h"
-#import "CRABreedController.h"
-#import "SubBreedsListTableViewController.h"
-#import "ImagesCollectionViewController.h"
+#import "CRABreedNetworkClient.h"
+#import "CRASubBreedsListTableViewController.h"
+#import "CRAImagesCollectionViewController.h"
 
-
-@interface BreedsListTableViewController ()
+@interface CRABreedsListTableViewController ()
 @property (nonatomic, copy) NSArray *breeds;
 
 @end
 
-@implementation BreedsListTableViewController
+@implementation CRABreedsListTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    dispatch_group_t group = dispatch_group_create();
-    
-    dispatch_group_enter(group);
-    
-    [CRABreedController.sharedController fetchAllBreeds:^(NSArray *breeds) {
+    [CRABreedNetworkClient.sharedController fetchAllBreeds:^(NSArray *breeds) {
         self.breeds = breeds;
-        dispatch_group_leave(group);
-        [self.tableView reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[self tableView] reloadData];
+        });
     }];
-    
-
-    
-    
 }
 
 #pragma mark - Table view data source
@@ -48,12 +39,9 @@
     return _breeds.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"breedCell" forIndexPath:indexPath];
-    //Capitalize all the names
     cell.textLabel.text = [[self.breeds[indexPath.row] name] capitalizedString];;
-    
     return cell;
 }
 
@@ -72,15 +60,13 @@
     CRABreed * breed = _breeds[[[[self tableView] indexPathForSelectedRow] row]];
     if([segue.identifier  isEqualToString: @"toSubBreedVC"])
     {
-        SubBreedsListTableViewController *destinationVC = segue.destinationViewController;
-        destinationVC.breed = breed;
-
-    }else if([segue.identifier  isEqualToString: @"toCollectionVC"]){
-        ImagesCollectionViewController *destinationVC = segue.destinationViewController;
+        CRASubBreedsListTableViewController *destinationVC = segue.destinationViewController;
         destinationVC.breed = breed;
         
+    }else if([segue.identifier  isEqualToString: @"toCollectionVC"]){
+        CRAImagesCollectionViewController *destinationVC = segue.destinationViewController;
+        destinationVC.breed = breed;
     }
 }
-
 
 @end

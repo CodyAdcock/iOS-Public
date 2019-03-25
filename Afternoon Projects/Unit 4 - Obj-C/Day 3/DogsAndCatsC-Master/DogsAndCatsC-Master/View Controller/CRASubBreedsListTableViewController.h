@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SubBreedsListTableViewController : UITableViewController
+@interface CRASubBreedsListTableViewController : UITableViewController
 @property (nonatomic, strong) CRABreed * breed;
 @end
 

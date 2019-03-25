@@ -6,21 +6,19 @@
 //  Copyright © 2019 Cody Adcock. All rights reserved.
 //
 
-#import "SubBreedsListTableViewController.h"
+#import "CRASubBreedsListTableViewController.h"
 #import "CRABreed.h"
 #import "CRASubBreed.h"
-#import "ImagesCollectionViewController.h"
+#import "CRAImagesCollectionViewController.h"
 
-@interface SubBreedsListTableViewController ()
+@interface CRASubBreedsListTableViewController ()
 
 @end
 
-@implementation SubBreedsListTableViewController
-
+@implementation CRASubBreedsListTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.title = self.breed.name;
 }
 
@@ -37,9 +35,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"subBreedCell" forIndexPath:indexPath];
-    
     cell.textLabel.text = [[self.breed.subBreeds[indexPath.row] name] capitalizedString];
-    
     return cell;
 }
 
@@ -61,7 +57,7 @@
     CRASubBreed * subBreed = _breed.subBreeds[[[[self tableView] indexPathForSelectedRow] row]];
     if([segue.identifier  isEqualToString: @"fromSubBreedsToImages"])
     {
-        ImagesCollectionViewController *destinationVC = segue.destinationViewController;
+        CRAImagesCollectionViewController *destinationVC = segue.destinationViewController;
         destinationVC.subBreed = subBreed;
         destinationVC.breed = _breed;
         

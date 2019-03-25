@@ -7,21 +7,21 @@
 //  Copyright © 2019 Cody Adcock. All rights reserved.
 //
 
-#import "CRABreedController.h"
+#import "CRABreedNetworkClient.h"
 #import "CRABreed.h"
 #import "CRASubBreed.h"
 
 static NSString * const baseURLString = @"https://dog.ceo/api";
 
-@implementation CRABreedController
+@implementation CRABreedNetworkClient
 
 //Shared instance
-+ (CRABreedController *)sharedController
++ (CRABreedNetworkClient *)sharedController
 {
-    static CRABreedController *sharedController = nil;
+    static CRABreedNetworkClient *sharedController = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedController = [CRABreedController new];
+        sharedController = [CRABreedNetworkClient new];
     });
     return sharedController;
 }

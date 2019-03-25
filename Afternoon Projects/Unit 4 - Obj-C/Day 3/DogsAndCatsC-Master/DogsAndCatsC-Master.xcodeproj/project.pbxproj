@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C37EBB772246948300ECA71F /* CRASubBreed.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB762246948300ECA71F /* CRASubBreed.m */; };
-		C37EBB7A2246F7A600ECA71F /* BreedsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB792246F7A600ECA71F /* BreedsListTableViewController.m */; };
-		C37EBB7D22486E4300ECA71F /* SubBreedsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB7C22486E4300ECA71F /* SubBreedsListTableViewController.m */; };
-		C37EBB80224878AB00ECA71F /* ImagesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB7F224878AB00ECA71F /* ImagesCollectionViewController.m */; };
-		C37EBB83224878E000ECA71F /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB82224878E000ECA71F /* ImageCollectionViewCell.m */; };
+		C37EBB7A2246F7A600ECA71F /* CRABreedsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB792246F7A600ECA71F /* CRABreedsListTableViewController.m */; };
+		C37EBB7D22486E4300ECA71F /* CRASubBreedsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB7C22486E4300ECA71F /* CRASubBreedsListTableViewController.m */; };
+		C37EBB80224878AB00ECA71F /* CRAImagesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB7F224878AB00ECA71F /* CRAImagesCollectionViewController.m */; };
+		C37EBB83224878E000ECA71F /* CRAImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB82224878E000ECA71F /* CRAImageCollectionViewCell.m */; };
 		C37EBB892248BBAE00ECA71F /* CRADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB882248BBAE00ECA71F /* CRADetailViewController.m */; };
 		C38F21922248D70500E50945 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38F21912248D70500E50945 /* DetailViewController.swift */; };
 		C39748B22208D737009A3D3A /* CRABreed.m in Sources */ = {isa = PBXBuildFile; fileRef = C39748B12208D737009A3D3A /* CRABreed.m */; };
@@ -20,20 +20,20 @@
 		C3C5A7CD21F668AB0000E4B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3C5A7CC21F668AB0000E4B1 /* Assets.xcassets */; };
 		C3C5A7D021F668AB0000E4B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C5A7CE21F668AB0000E4B1 /* LaunchScreen.storyboard */; };
 		C3C5A7D321F668AB0000E4B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A7D221F668AB0000E4B1 /* main.m */; };
-		C3F49388224429070050301A /* CRABreedController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F49387224429070050301A /* CRABreedController.m */; };
+		C3F49388224429070050301A /* CRABreedNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F49387224429070050301A /* CRABreedNetworkClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C37EBB752246948300ECA71F /* CRASubBreed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRASubBreed.h; sourceTree = "<group>"; };
 		C37EBB762246948300ECA71F /* CRASubBreed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRASubBreed.m; sourceTree = "<group>"; };
-		C37EBB782246F7A600ECA71F /* BreedsListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BreedsListTableViewController.h; sourceTree = "<group>"; };
-		C37EBB792246F7A600ECA71F /* BreedsListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreedsListTableViewController.m; sourceTree = "<group>"; };
-		C37EBB7B22486E4300ECA71F /* SubBreedsListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubBreedsListTableViewController.h; sourceTree = "<group>"; };
-		C37EBB7C22486E4300ECA71F /* SubBreedsListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubBreedsListTableViewController.m; sourceTree = "<group>"; };
-		C37EBB7E224878AB00ECA71F /* ImagesCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagesCollectionViewController.h; sourceTree = "<group>"; };
-		C37EBB7F224878AB00ECA71F /* ImagesCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagesCollectionViewController.m; sourceTree = "<group>"; };
-		C37EBB81224878E000ECA71F /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
-		C37EBB82224878E000ECA71F /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
+		C37EBB782246F7A600ECA71F /* CRABreedsListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRABreedsListTableViewController.h; sourceTree = "<group>"; };
+		C37EBB792246F7A600ECA71F /* CRABreedsListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRABreedsListTableViewController.m; sourceTree = "<group>"; };
+		C37EBB7B22486E4300ECA71F /* CRASubBreedsListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRASubBreedsListTableViewController.h; sourceTree = "<group>"; };
+		C37EBB7C22486E4300ECA71F /* CRASubBreedsListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRASubBreedsListTableViewController.m; sourceTree = "<group>"; };
+		C37EBB7E224878AB00ECA71F /* CRAImagesCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAImagesCollectionViewController.h; sourceTree = "<group>"; };
+		C37EBB7F224878AB00ECA71F /* CRAImagesCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAImagesCollectionViewController.m; sourceTree = "<group>"; };
+		C37EBB81224878E000ECA71F /* CRAImageCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAImageCollectionViewCell.h; sourceTree = "<group>"; };
+		C37EBB82224878E000ECA71F /* CRAImageCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAImageCollectionViewCell.m; sourceTree = "<group>"; };
 		C37EBB872248BBAE00ECA71F /* CRADetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRADetailViewController.h; sourceTree = "<group>"; };
 		C37EBB882248BBAE00ECA71F /* CRADetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRADetailViewController.m; sourceTree = "<group>"; };
 		C38F21902248D70500E50945 /* DogsAndCatsC-Master-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DogsAndCatsC-Master-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -49,8 +49,8 @@
 		C3C5A7D121F668AB0000E4B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3C5A7D221F668AB0000E4B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3E44A4521F6875C0032E03B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C3F49386224429070050301A /* CRABreedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRABreedController.h; sourceTree = "<group>"; };
-		C3F49387224429070050301A /* CRABreedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRABreedController.m; sourceTree = "<group>"; };
+		C3F49386224429070050301A /* CRABreedNetworkClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRABreedNetworkClient.h; sourceTree = "<group>"; };
+		C3F49387224429070050301A /* CRABreedNetworkClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRABreedNetworkClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +67,8 @@
 		C35C05FE2213770B0057012F /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				C3F49386224429070050301A /* CRABreedController.h */,
-				C3F49387224429070050301A /* CRABreedController.m */,
+				C3F49386224429070050301A /* CRABreedNetworkClient.h */,
+				C3F49387224429070050301A /* CRABreedNetworkClient.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -146,8 +146,8 @@
 		C3C5A7DD21F668DF0000E4B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C37EBB81224878E000ECA71F /* ImageCollectionViewCell.h */,
-				C37EBB82224878E000ECA71F /* ImageCollectionViewCell.m */,
+				C37EBB81224878E000ECA71F /* CRAImageCollectionViewCell.h */,
+				C37EBB82224878E000ECA71F /* CRAImageCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,12 +155,12 @@
 		C3C5A7DE21F668F70000E4B1 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C37EBB782246F7A600ECA71F /* BreedsListTableViewController.h */,
-				C37EBB792246F7A600ECA71F /* BreedsListTableViewController.m */,
-				C37EBB7B22486E4300ECA71F /* SubBreedsListTableViewController.h */,
-				C37EBB7C22486E4300ECA71F /* SubBreedsListTableViewController.m */,
-				C37EBB7E224878AB00ECA71F /* ImagesCollectionViewController.h */,
-				C37EBB7F224878AB00ECA71F /* ImagesCollectionViewController.m */,
+				C37EBB782246F7A600ECA71F /* CRABreedsListTableViewController.h */,
+				C37EBB792246F7A600ECA71F /* CRABreedsListTableViewController.m */,
+				C37EBB7B22486E4300ECA71F /* CRASubBreedsListTableViewController.h */,
+				C37EBB7C22486E4300ECA71F /* CRASubBreedsListTableViewController.m */,
+				C37EBB7E224878AB00ECA71F /* CRAImagesCollectionViewController.h */,
+				C37EBB7F224878AB00ECA71F /* CRAImagesCollectionViewController.m */,
 				C37EBB872248BBAE00ECA71F /* CRADetailViewController.h */,
 				C37EBB882248BBAE00ECA71F /* CRADetailViewController.m */,
 				C38F21912248D70500E50945 /* DetailViewController.swift */,
@@ -241,16 +241,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C38F21922248D70500E50945 /* DetailViewController.swift in Sources */,
-				C37EBB80224878AB00ECA71F /* ImagesCollectionViewController.m in Sources */,
+				C37EBB80224878AB00ECA71F /* CRAImagesCollectionViewController.m in Sources */,
 				C3C5A7D321F668AB0000E4B1 /* main.m in Sources */,
 				C39748B22208D737009A3D3A /* CRABreed.m in Sources */,
 				C3C5A7C521F668AB0000E4B1 /* AppDelegate.m in Sources */,
-				C37EBB83224878E000ECA71F /* ImageCollectionViewCell.m in Sources */,
+				C37EBB83224878E000ECA71F /* CRAImageCollectionViewCell.m in Sources */,
 				C37EBB892248BBAE00ECA71F /* CRADetailViewController.m in Sources */,
-				C3F49388224429070050301A /* CRABreedController.m in Sources */,
-				C37EBB7A2246F7A600ECA71F /* BreedsListTableViewController.m in Sources */,
+				C3F49388224429070050301A /* CRABreedNetworkClient.m in Sources */,
+				C37EBB7A2246F7A600ECA71F /* CRABreedsListTableViewController.m in Sources */,
 				C37EBB772246948300ECA71F /* CRASubBreed.m in Sources */,
-				C37EBB7D22486E4300ECA71F /* SubBreedsListTableViewController.m in Sources */,
+				C37EBB7D22486E4300ECA71F /* CRASubBreedsListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

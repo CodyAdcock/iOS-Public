@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class CRABreed;
 @class CRASubBreed;
 
-@interface ImagesCollectionViewController : UICollectionViewController
+@interface CRAImagesCollectionViewController : UICollectionViewController
 
 @property (nonatomic, strong) CRABreed * breed;
 @property (nonatomic, strong) CRASubBreed * subBreed;

@@ -11,7 +11,7 @@
 @class CRAImage;
 @class CRASubBreed;
 
-@interface CRABreedController : NSObject
+@interface CRABreedNetworkClient : NSObject
 
 - (void)fetchAllBreeds: (void (^) (NSArray *))completion;
 
@@ -26,7 +26,7 @@
 //fetch image data
 - (void)fetchImageData:(NSURL *)url completion:(void (^)(NSData *imageData, NSError *error))completion;
 
-+ (CRABreedController *)sharedController;
++ (CRABreedNetworkClient *)sharedController;
 
 @end
 

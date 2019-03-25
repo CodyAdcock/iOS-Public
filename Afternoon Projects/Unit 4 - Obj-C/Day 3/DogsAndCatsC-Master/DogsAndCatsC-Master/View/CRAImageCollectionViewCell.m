@@ -6,10 +6,10 @@
 //  Copyright © 2019 Cody Adcock. All rights reserved.
 //
 
-#import "ImageCollectionViewCell.h"
-#import "CRABreedController.h"
+#import "CRAImageCollectionViewCell.h"
+#import "CRABreedNetworkClient.h"
 
-@implementation ImageCollectionViewCell
+@implementation CRAImageCollectionViewCell
 
 - (void)prepareForReuse
 {
@@ -20,7 +20,7 @@
 
 - (void)setImageURL:(NSURL *)imageURL
 {
-    [CRABreedController.sharedController fetchImageData:imageURL completion:^(NSData *imageData, NSError *error) {
+    [CRABreedNetworkClient.sharedController fetchImageData:imageURL completion:^(NSData *imageData, NSError *error) {
         if (error || !imageData) {
             NSLog(@"Error fetching image data %@", error);
             return;

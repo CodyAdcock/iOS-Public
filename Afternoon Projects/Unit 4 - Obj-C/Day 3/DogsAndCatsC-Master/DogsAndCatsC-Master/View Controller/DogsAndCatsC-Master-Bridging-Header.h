@@ -4,4 +4,4 @@
 
 #import "CRABreed.h"
 #import "CRASubBreed.h"
-#import "CRABreedController.h"
+#import "CRABreedNetworkClient.h"

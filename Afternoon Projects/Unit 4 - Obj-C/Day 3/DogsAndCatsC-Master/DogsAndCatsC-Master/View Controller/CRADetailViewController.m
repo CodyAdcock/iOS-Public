@@ -7,8 +7,8 @@
 //
 
 #import "CRADetailViewController.h"
-#import "ImagesCollectionViewController.h"
-#import "CRABreedController.h"
+#import "CRAImagesCollectionViewController.h"
+#import "CRABreedNetworkClient.h"
 
 @interface CRADetailViewController ()
 
