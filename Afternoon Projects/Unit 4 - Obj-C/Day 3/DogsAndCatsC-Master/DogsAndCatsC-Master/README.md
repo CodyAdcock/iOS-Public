@@ -2,7 +2,7 @@
 
 Please fork and clone this repository
 
-Students will build an app to access different information and photos of Breeds of Dogs. This app will help students practice and solify the following concepts in Objective-C:
+Students will build an app to access different information and photos of Breeds of Dogs. This app will help students practice and solidify the following concepts in Objective-C:
 *Table Views
 *Collection Views
 *REST API calls
@@ -93,14 +93,28 @@ No other classes will reference properties or methods on the CRABreedsListTableV
 
 ### SubBreedsListTableViewController
 * Implement the `UITableViewDataSource` methods. (hint: Use the passed Breed)
-* Create a custom setter- `setBreed:` for the public breed property that checks if the breed being passed through the setter is the same as the current rover ( `_breed` ). If it isn't, then set the current breed to the one passed into the setter, and also reload the tableview. Remember that this setter is where we can do the Objective-C equivalent of a Swift `willSet` and `didSet`.
+* Create a custom setter- `setBreed:` for the public breed property that checks if the breed being passed through the setter is the same as the current breed ( `_breed` ). If it isn't, then set the current breed to the one passed into the setter, and also reload the tableview. Remember that this setter is where we can do the Objective-C equivalent of a Swift `willSet` and `didSet`.
 * In the prepareForSegue, you should pass two things to the destination view controller; the Breed that the SubBreedsListTableViewController got from the initial view controller's prepareForSegue, and the SubBreed from the cell that the user just tapped on. (Again, make sure to create public properties on the destination view controller to be placeholders for these two things- i.e. two separate "landing pads")
 
 At this point, you should be able to run the app and be able to select a Breed with a SubBreed from the inital table view controller, and see a list of its SubBreeds. When selecting a Breed without SubBreeds or a SubBreed you should be brought to the Collection View Controller. Make sure this works before continuing.
 
-## Part Three: Collection View Controller
+## Part Three: Collection View Controller and Collection View Cell
+
+### ImageCollectionViewCell:
+* Create the IBOutlet for the imageView
+* Create a landing pad for an image NSURL
+* In the implementation of the cell file, call the `prepareForReuse` function.
+* Create a `setImageURL` method that uses the `fetchImageData` method from the `BreedNetworkClient`
+* Set the image on the main thread.
 
 ### ImagesCollectionViewController:
+* In the implementation create a private array called `imageURLs` that will be the data source for the collection view.
+* Implement the `UICollectionViewDataSource` methods. (hint: Fetch the image URLs of the passed Breed or SubBreed)
+* Create a custom setter- `setImageURLs:`
+* Pass the imageURL to the `UICollectionViewCell`
+
+You should now be able to load an entire collection view of images of Breeds and SubBreeds.
+
 
 ## Contributions
 
