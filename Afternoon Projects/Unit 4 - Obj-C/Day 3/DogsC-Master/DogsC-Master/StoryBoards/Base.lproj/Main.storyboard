@@ -142,8 +142,6 @@
             </objects>
             <point key="canvasLocation" x="1118" y="-200"/>
         </scene>
-<<<<<<< HEAD
-=======
         <!--Detail View Controller-->
         <scene sceneID="hRS-aP-Kxj">
             <objects>
@@ -188,7 +186,6 @@
             </objects>
             <point key="canvasLocation" x="1957" y="204"/>
         </scene>
->>>>>>> CodyDetailView
         <!--Navigation Controller-->
         <scene sceneID="w4G-gw-XZ2">
             <objects>

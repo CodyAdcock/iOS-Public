@@ -11,10 +11,7 @@
 #import "CRASubBreed.h"
 #import "CRAImageCollectionViewCell.h"
 #import "CRABreedNetworkClient.h"
-<<<<<<< HEAD
-=======
 #import "DogsC_Master-Swift.h"
->>>>>>> CodyDetailView
 
 @interface CRAImagesCollectionViewController ()
 
