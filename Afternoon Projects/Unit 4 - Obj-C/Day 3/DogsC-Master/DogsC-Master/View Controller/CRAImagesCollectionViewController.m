@@ -11,7 +11,6 @@
 #import "CRASubBreed.h"
 #import "CRAImageCollectionViewCell.h"
 #import "CRABreedNetworkClient.h"
-#import "CRADetailViewController.h"
 
 @interface CRAImagesCollectionViewController ()
 

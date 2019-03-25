@@ -12,8 +12,6 @@
 		C37EBB7D22486E4300ECA71F /* CRASubBreedsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB7C22486E4300ECA71F /* CRASubBreedsListTableViewController.m */; };
 		C37EBB80224878AB00ECA71F /* CRAImagesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB7F224878AB00ECA71F /* CRAImagesCollectionViewController.m */; };
 		C37EBB83224878E000ECA71F /* CRAImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB82224878E000ECA71F /* CRAImageCollectionViewCell.m */; };
-		C37EBB892248BBAE00ECA71F /* CRADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37EBB882248BBAE00ECA71F /* CRADetailViewController.m */; };
-		C38F21922248D70500E50945 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38F21912248D70500E50945 /* DetailViewController.swift */; };
 		C39748B22208D737009A3D3A /* CRABreed.m in Sources */ = {isa = PBXBuildFile; fileRef = C39748B12208D737009A3D3A /* CRABreed.m */; };
 		C3C5A7C521F668AB0000E4B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A7C421F668AB0000E4B1 /* AppDelegate.m */; };
 		C3C5A7CB21F668AB0000E4B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C5A7C921F668AB0000E4B1 /* Main.storyboard */; };
@@ -34,10 +32,7 @@
 		C37EBB7F224878AB00ECA71F /* CRAImagesCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAImagesCollectionViewController.m; sourceTree = "<group>"; };
 		C37EBB81224878E000ECA71F /* CRAImageCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAImageCollectionViewCell.h; sourceTree = "<group>"; };
 		C37EBB82224878E000ECA71F /* CRAImageCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAImageCollectionViewCell.m; sourceTree = "<group>"; };
-		C37EBB872248BBAE00ECA71F /* CRADetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRADetailViewController.h; sourceTree = "<group>"; };
-		C37EBB882248BBAE00ECA71F /* CRADetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRADetailViewController.m; sourceTree = "<group>"; };
 		C38F21902248D70500E50945 /* DogsC-Master-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DogsC-Master-Bridging-Header.h"; sourceTree = "<group>"; };
-		C38F21912248D70500E50945 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C39748B02208D737009A3D3A /* CRABreed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRABreed.h; sourceTree = "<group>"; };
 		C39748B12208D737009A3D3A /* CRABreed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRABreed.m; sourceTree = "<group>"; };
 		C3C5A7C021F668AB0000E4B1 /* DogsC-Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DogsC-Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,9 +156,6 @@
 				C37EBB7C22486E4300ECA71F /* CRASubBreedsListTableViewController.m */,
 				C37EBB7E224878AB00ECA71F /* CRAImagesCollectionViewController.h */,
 				C37EBB7F224878AB00ECA71F /* CRAImagesCollectionViewController.m */,
-				C37EBB872248BBAE00ECA71F /* CRADetailViewController.h */,
-				C37EBB882248BBAE00ECA71F /* CRADetailViewController.m */,
-				C38F21912248D70500E50945 /* DetailViewController.swift */,
 				C38F21902248D70500E50945 /* DogsC-Master-Bridging-Header.h */,
 			);
 			path = "View Controller";
@@ -240,13 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C38F21922248D70500E50945 /* DetailViewController.swift in Sources */,
 				C37EBB80224878AB00ECA71F /* CRAImagesCollectionViewController.m in Sources */,
 				C3C5A7D321F668AB0000E4B1 /* main.m in Sources */,
 				C39748B22208D737009A3D3A /* CRABreed.m in Sources */,
 				C3C5A7C521F668AB0000E4B1 /* AppDelegate.m in Sources */,
 				C37EBB83224878E000ECA71F /* CRAImageCollectionViewCell.m in Sources */,
-				C37EBB892248BBAE00ECA71F /* CRADetailViewController.m in Sources */,
 				C3F49388224429070050301A /* CRABreedNetworkClient.m in Sources */,
 				C37EBB7A2246F7A600ECA71F /* CRABreedsListTableViewController.m in Sources */,
 				C37EBB772246948300ECA71F /* CRASubBreed.m in Sources */,
