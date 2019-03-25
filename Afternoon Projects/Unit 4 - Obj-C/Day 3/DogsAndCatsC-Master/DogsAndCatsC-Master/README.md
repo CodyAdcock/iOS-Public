@@ -40,9 +40,22 @@ Create a new Cocoa Touch sublcess of `NSObject` for each of these three model ob
 * A description of what the dog is bred for
 * Breed Group
 * Lifespan
-* temperment
+* Temperament
 * UUID
 * ImageURL
 * Image
 
 * **Image**:
+* Image ID
+* Image URL
+* Height
+* Weight
+* Breed ID
+* Breed Name
+* Country Code
+* A description of what the dog is bred for
+* Breed Group
+* Lifespan
+* Temperament
+
+
