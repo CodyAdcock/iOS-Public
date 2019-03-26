@@ -13,22 +13,24 @@
 
 - (void)prepareForReuse
 {
+    //when preparing for reuse, use the stock dog image
     [super prepareForReuse];
     self.imageView.image = [UIImage imageNamed:@"dog"];
-    [self setBackgroundColor:[UIColor grayColor]] ;
 }
 
+//When ImageURL is set run this
 - (void)setImageURL:(NSURL *)imageURL
 {
+    //fetch image data from imageURL
     [CRABreedNetworkClient.sharedController fetchImageData:imageURL completion:^(NSData *imageData, NSError *error) {
         if (error || !imageData) {
             NSLog(@"Error fetching image data %@", error);
             return;
         }
-        
+        //put back on main thread
         dispatch_async(dispatch_get_main_queue(), ^{
+            //set imageView
             self.imageView.image = [UIImage imageWithData:imageData];
-            
         });
     }];
 }

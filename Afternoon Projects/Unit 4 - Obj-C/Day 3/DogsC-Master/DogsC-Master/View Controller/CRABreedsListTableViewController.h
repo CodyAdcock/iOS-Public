@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CRABreedsListTableViewController : UITableViewController
-
+//no properties needed.
 @end
 
 NS_ASSUME_NONNULL_END

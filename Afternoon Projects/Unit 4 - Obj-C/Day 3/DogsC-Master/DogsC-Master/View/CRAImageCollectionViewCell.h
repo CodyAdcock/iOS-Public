@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CRAImageCollectionViewCell : UICollectionViewCell
+//properties
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) NSURL * imageURL;
 @end

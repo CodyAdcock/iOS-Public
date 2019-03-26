@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -87,6 +86,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="imageView" destination="xqG-SZ-4bV" id="cfX-qI-8T7"/>
+                                    <segue destination="ZS4-lT-7Ah" kind="show" identifier="toDetailVC" id="4Tc-QR-Fuf"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -145,22 +145,22 @@
         <!--Detail View Controller-->
         <scene sceneID="hRS-aP-Kxj">
             <objects>
-                <viewController id="ZS4-lT-7Ah" customClass="DetailViewController" customModule="DogsAndCatsC_Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZS4-lT-7Ah" customClass="DetailViewController" customModule="DogsC_Master" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tHV-I8-1SY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SgN-9V-CwP">
-                                <rect key="frame" x="37.5" y="110" width="300" height="467"/>
+                                <rect key="frame" x="19" y="98.5" width="337.5" height="534"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="7Wt-tK-mG0">
-                                        <rect key="frame" x="29.5" y="0.0" width="241" height="443.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="337" height="506.5"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="7Wt-tK-mG0" secondAttribute="height" multiplier="120:221" id="Dtd-45-0Nc"/>
+                                            <constraint firstAttribute="width" secondItem="7Wt-tK-mG0" secondAttribute="height" multiplier="337:506" id="cus-sc-4wc"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Dog Name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntq-lj-nrS">
-                                        <rect key="frame" x="103.5" y="451.5" width="93.5" height="15.5"/>
+                                        <rect key="frame" x="122" y="514.5" width="93.5" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -171,14 +171,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SgN-9V-CwP" firstAttribute="centerX" secondItem="xLs-F9-Wd1" secondAttribute="centerX" id="GgO-1A-Om3"/>
-                            <constraint firstItem="SgN-9V-CwP" firstAttribute="height" secondItem="tHV-I8-1SY" secondAttribute="height" multiplier="0.7" id="UAv-ch-944"/>
-                            <constraint firstItem="SgN-9V-CwP" firstAttribute="width" secondItem="tHV-I8-1SY" secondAttribute="width" multiplier="0.8" id="cvS-HX-2sb"/>
+                            <constraint firstItem="SgN-9V-CwP" firstAttribute="height" secondItem="tHV-I8-1SY" secondAttribute="height" multiplier="0.8" id="UAv-ch-944"/>
+                            <constraint firstItem="SgN-9V-CwP" firstAttribute="width" secondItem="tHV-I8-1SY" secondAttribute="width" multiplier="0.9" id="cvS-HX-2sb"/>
                             <constraint firstItem="SgN-9V-CwP" firstAttribute="centerY" secondItem="xLs-F9-Wd1" secondAttribute="centerY" id="hy7-bY-iTs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xLs-F9-Wd1"/>
                     </view>
                     <connections>
-                        <outlet property="dogImageView" destination="7Wt-tK-mG0" id="P91-kW-c6o"/>
+                        <outlet property="dogImageView" destination="7Wt-tK-mG0" id="9Zg-Hs-oZg"/>
+                        <outlet property="dogNameLabel" destination="ntq-lj-nrS" id="psF-DZ-cg7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6l-FN-UBW" userLabel="First Responder" sceneMemberID="firstResponder"/>

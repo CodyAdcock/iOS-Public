@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = self.breed.name;
+    self.title = [self.breed.name capitalizedString];
 }
 
 #pragma mark - Table view data source
@@ -29,7 +29,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [_breed.subBreeds count];
+    return [self.breed.subBreeds count];
 }
 
 
@@ -39,6 +39,8 @@
     return cell;
 }
 
+//Landing pad setValue
+//run this when the breed property is set
 - (void)setBreed:(CRABreed *)breed
 {
     if(breed != _breed){
@@ -47,19 +49,22 @@
     }
 }
 
+//when a row is selected, the view will perform a the specified segue
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"fromSubBreedsToImages" sender:self];
 }
 
+//when a segue is about to happen this code will run
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    CRASubBreed * subBreed = _breed.subBreeds[[[[self tableView] indexPathForSelectedRow] row]];
+    CRASubBreed * subBreed = self.breed.subBreeds[[[[self tableView] indexPathForSelectedRow] row]];
     if([segue.identifier  isEqualToString: @"fromSubBreedsToImages"])
     {
+        //send breed and subBreed to landing pads on collection view
         CRAImagesCollectionViewController *destinationVC = segue.destinationViewController;
         destinationVC.subBreed = subBreed;
-        destinationVC.breed = _breed;
+        destinationVC.breed = self.breed;
         
     }
 }
