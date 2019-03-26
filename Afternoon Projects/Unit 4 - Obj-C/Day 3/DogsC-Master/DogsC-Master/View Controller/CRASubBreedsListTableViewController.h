@@ -12,7 +12,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CRASubBreedsListTableViewController : UITableViewController
+//landing pad property
 @property (nonatomic, strong) CRABreed * breed;
+
 @end
 
 NS_ASSUME_NONNULL_END
